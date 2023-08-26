@@ -1,0 +1,100 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+h1{
+    color: rgb(61, 180, 228);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#wrapper{
+    background-color: rgb(61, 180, 228);
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#button{
+    background-color: tomato;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: white;
+}
+
+button:active{
+    transform: translate(2px, 2px);}
+
+img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+
+#name, #number{
+    font-size: 1.4rem;
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 320px) {
+    h1{
+        font-size: 1.4rem;
+    }
+    #wrapper{
+        width: 250px;
+        height: 250px;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    #button{
+        height: 20px;
+        width: 150px;
+        font-size: 0.6rem;
+    }
+
+    #number, #name{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 2rem;
+    }
+    #wrapper{
+        width: 350px;
+        height: 350px;
+    }
+    img{
+        width: 250px;
+        height: 250px;
+    }
+    #button{
+        height: 25px;
+        width: 250px;
+        font-size: 1rem;
+    }
+
+    #number, #name{
+        font-size: 0.9rem;
+    }
+}
